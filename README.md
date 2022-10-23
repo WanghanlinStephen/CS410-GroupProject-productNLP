@@ -1,12 +1,12 @@
 # 410 Group Project: Chinese Traditional Products NLP
 
 
-Team Informations:
-Hanlin Wang - hanlinw4@illinois.edu 
-Ruide Zhu - ruidezhu2000@gmail.com
-Haotian Wang - haotian_wang@hotmail.com
-Huiyang Chi - huiyang_chi@outlook.com
-Mengchen Chou - mcqiu3@gmail.com
+Team Informations: <br/> 
+Hanlin Wang - hanlinw4@illinois.edu <br/> 
+Ruide Zhu - ruidezhu2000@gmail.com <br/> 
+Haotian Wang - haotian_wang@hotmail.com <br/> 
+Huiyang Chi - huiyang_chi@outlook.com <br/> 
+Mengchen Chou - mcqiu3@gmail.com <br/> 
 
 
 Task Introduction:
