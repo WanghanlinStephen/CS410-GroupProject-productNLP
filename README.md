@@ -1,4 +1,4 @@
-# 410 Group Project: Chinese Traditional Products NLP
+# 410 Group Project: Commodity Trading Ranker System
 
 
 Team Informations: <br/> 
