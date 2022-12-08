@@ -53,6 +53,6 @@ When you are in the search mode, after inputting M1 core CPU, you will have 3 re
 
 ## Data Description
 
-We collect the data from multiple datasets available in Kaggle. We then conducted data cleaning and aggregatation using Pandas and Numpy to maximize classfication accuracy and efficiency so they are usable and meaningful to our project. All of the data originates from real online electronic stores and product comparison platforms. 
+We collect the data from multiple datasets available in Kaggle, and all of the data we collected originates from real online electronic stores and product comparison platforms. We then conducted data cleaning and aggregatation using Pandas and Numpy to maximize classfication accuracy and efficiency so they are usable and meaningful to our project.
 
 Specifically, `classifier.dat` contains the detailed descriptions of the products along with the categories that they belong to.  `classifier.dat.label` contains only the categories in order to generate the labels that can be used by MetaPy. Similiarly, `search.dat` contains product names, and `search.dat.label` contains the according categories that those products belong to.
