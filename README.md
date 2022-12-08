@@ -8,6 +8,7 @@ Haotian Wang - hw55@illinois.edu <br/>
 Huiyang Chi - huiyang_chi@outlook.com <br/> 
 Mengchen Chou - mcqiu3@gmail.com <br/> 
 
+Presentation video link: https://drive.google.com/file/d/1Q2_vmAq7uOQvTv8464Vb4CAq7GeZi5Zz/view?usp=sharing
 
 ## Background and Introduction
           
