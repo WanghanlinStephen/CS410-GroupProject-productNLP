@@ -51,3 +51,7 @@ When you are in the classify mode, You can type in M1 core CPU, then the output 
 When you are in the search mode, after inputting M1 core CPU, you will have 3 results from database, with it's category and title
 <img width="616" alt="image" src="https://user-images.githubusercontent.com/54618402/206506926-e4049007-2269-44c2-8b67-9dd939e47cfe.png">
 
+## Data Description
+
+We collect the data from multiple datasets available in Kaggle. We then conducted data cleaning and aggregatation using Pandas and Numpy to maximize classfication accuracy and efficiency so they are usable and meaningful to our project. All of the data originates from real online electronic stores and product comparison platforms. 
+Specifically, `classifier.dat` contains the detailed descriptions of the products along with the categories that they belong to.  `classifier.dat.label` contains only the categories in order to generate the labels that can be used by MetaPy. Similiarly, `search.dat` contains product names, and `search.dat.label` contains the according categories that those products belong to.
