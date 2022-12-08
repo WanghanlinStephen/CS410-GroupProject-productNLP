@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+<html>
+   <body>
+		
+			<div class="fixed-top">
+				<div class="block1">
+					<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+						<a class="navbar-brand" href="#">Product NLP Classifier</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+						<ul class="navbar-nav mr-auto">
+						  <li class="nav-item active"><a class="nav-link" href="http://127.0.0.1:5000/productNLP" name="home">Search</a></li>
+						</li>
+						  
+						  
+					  </div>
+					</nav>
+				</div >
+				<div  >
+
+					<ul>
+					<div class="input-area">
+						<form action = "http://localhost:5000/classify" method = "post" class="form-inline my-2 my-lg-0">
+									<tr><input class="form-control mr-sm-2" type="text" placeholder="Enter Input" name = "txtrecipe" aria-label="Search"></tr>
+									<tr><button class="btn btn-outline-success my-2 my-sm-0" "submit" value = "submit">Classify</button></tr>
+						
+						</form>		
+					</div>
+				</div>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<div style="position:relative; margin-left:100px"><p>{{result|safe}}</p><div>
+							
+			</div>
+		</form>		
+	</body>
+</html>
+		
+{% endblock %}

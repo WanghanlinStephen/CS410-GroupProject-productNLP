@@ -1,0 +1,16 @@
+stop-words = "stopwords.txt"
+inverted-index = "invidx"
+corpus = "line.toml"
+forward-index = "fwdidx"
+index = "idx"
+dataset = "classifier"
+prefix = "./"
+[[analyzers]]
+	filter = "default-unigram-chain"
+	ngram = 1
+	method = "ngram-word"
+[ranker]
+	k3 = 500
+	b = 0.750000
+	k1 = 1.20000
+	method = "bm25"

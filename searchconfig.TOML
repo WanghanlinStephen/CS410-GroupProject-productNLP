@@ -1,0 +1,34 @@
+
+prefix = "."
+dataset = "search"
+corpus = "line.toml"
+index = "idx"
+forward-index = "fwdidx"
+inverted-index = "invidx"
+
+#
+# Global path configuration
+#
+
+stop-words = "stopwords.txt"
+
+#
+# Rankers section; all methods and possible parameters shown. Only specify one
+# method at a time by commenting out ones you do not want.
+#
+
+[ranker]
+method = "bm25"
+k1 = 1.2
+b = 0.75
+k3 = 500
+
+#
+# Analyzers section; you don't need to modify this part (unless you want to
+# experiment)
+#
+
+[[analyzers]]
+method = "ngram-word"
+ngram = 1
+filter = "default-unigram-chain"
