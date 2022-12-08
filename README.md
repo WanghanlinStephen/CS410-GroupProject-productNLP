@@ -9,33 +9,44 @@ Huiyang Chi - huiyang_chi@outlook.com <br/>
 Mengchen Chou - mcqiu3@gmail.com <br/> 
 
 
-**Task Introduction:**
+## Background and Introduction
+          
+With the development of the internet, e-commercial system has become more and more common in people’s lives. And NLP has been widely used for this kind of system, especially for classifying products and searching products. search system is a system that when you type in the keyword, the system will return the related data, and the classify system is a system that when you type in a keyword, the system will return the product’s category. The products are gathered through the internet, and the document will describe how data is collected, how the backend and frontend is developed. To be specific, when searching, we can search a kind of CPU whose label is AMD Ryzen 5 1600 BOx, and the related information like category and title will be returned. when we are classifying, it will be classified as CPUs. Another important difference is that for search, there might be multiple results but there can only be one label for classifying.
 
-For the free topic project, our team proposed a commodity trading system that allows users to find the corresponding product accurately  and efficiently through the keywords or short descriptions that the user input. The system will simulate real online trading market conditions by extracting data from the posts in several selected commodities trading Facebook groups. The tasks include but are not limited to gathering data, cleaning data, and modeling data by building a web application to present our data, etc.
 
-**The importance of the project:**
+## Application installation
 
-Environment:
-Not only does buying used reduce the number of natural resources being used, it also reduces the amount of energy used and pollution that's being emitted. Things like pesticides, burning fuel in the trucks that haul the items, toxic chemicals and carbon emissions.
+We will use Python as development language and its flask as web-development framework. To be specific, almost all the important information is stored in app.py file like the file can tell you how to create index, how to classify the goods and how to search the goods. In detail, we use Metapy as the library to implement those function.
+ 
+ 
+ 
 
-Save money:
-One of the most obvious and well-known benefits of buying secondhand is the cost savings. You can often find secondhand goods up to 50% cheaper than you could if you were buying new. When you consider that Americans spend over a trillion dollars annually on nonessential goods, those savings can add up.
+### Python
+Here we use anaconda for python installation:
+1.	`conda create -n <Environment Name> python=3.7`
 
-In order to search and find the good wanted, we need to filter the output from keywords inputted by users. And we should apply our filtering method to determine the items that are displayed to users and ensure they are correlated.
+2.	`activate < Environment Name>`
 
-**What techniques the project based on:**
+This is Command for python library installation:
+3.	`Pip install <library name>`
 
-We mainly will use python for the infrastructure under the hood. The related package we will use are flask, flask, redirect, url_for, render_template, request, session,abort, make_response, metapy, pymongo, pprint, pymongo,, django, random. We’ll render our web page using vanilla HTML and CSS.
+libraries should be installed: Flask, metapy, pymongo, urllib, io, re
 
-**What is the expected outcome:**
+## How to run the App
+1.	`conda activate python=3.7`
 
-So after finishing the project, we’ll get a web page containing classified information of products sold on facebook. By diving into each sub page, we can get the details of that specific kind of products and related descriptions. Taking our project as an example as an folder, each deeper layer of the folder shows a more specific category of products.
-What is the planned approach:
+2.	`cd <to the folder where app.py is>`
 
-Our approach is to break the problem down into gathering data, cleaning data, modeling data as well as using a web application to present our data.
+3.	`python ./app.py`
+Then go to the program’s corresponding URL(http://127.0.0.1:5000) to visit the website.
 
-In the process of data gathering, we continue to break the problem down into gathering data for two purposes, which are data preprocessing for classifying tasks and data for ranking tasks. For data for classification, we decided to give Meal DB’s API to give it a try, and use GraphAPI to extract data for ranking and store it into mongodb. As for data cleaning, we exclude data by specific criteria like the message that is too short to make more sense to our project. Then, for modeling, We use Metapy as the implementation tool. Finally, regarding the web application, we decide to use Flask to build our search engine.
+## Application usage
 
-**How to evaluate the project:**
+The user can click the switch botton in the search bar to decide whether he want to classify or search. 
 
-To evaluate the effectiveness of the project, we can compare the result with the expected outcome evaluated by a human. More specifically, users can test the classifier function of products by going to the "classifier" page then the user can input a product name to test the classifier. For example, "LEGO" should be classified as a toy, and "Bottle" should be identified as household goods. If the output matched with expected result, then the project can be classified as efficient.
+When you are in the classify mode, You can type in M1 core CPU, then the output would be that it will be classified as CPU. 
+
+
+When you are in the search mode, after inputting M1 core CPU, you will have 3 results from database, with it's category and title
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/54618402/206506926-e4049007-2269-44c2-8b67-9dd939e47cfe.png">
+
